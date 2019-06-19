@@ -18,11 +18,13 @@
  */
 package com.moez.QKSMS.feature.main
 
+import android.content.Intent
 import com.moez.QKSMS.common.base.QkView
 import io.reactivex.Observable
 
 interface MainView : QkView<MainState> {
 
+    val onNewIntentIntent: Observable<Intent>
     val activityResumedIntent: Observable<*>
     val queryChangedIntent: Observable<CharSequence>
     val composeIntent: Observable<Unit>

@@ -144,6 +144,15 @@ class MainViewModel @Inject constructor(
                 .autoDisposable(view.scope())
                 .subscribe { syncMessages.execute(Unit) }
 
+        // Launch screen from intent
+        view.onNewIntentIntent
+                .autoDisposable(view.scope())
+                .subscribe { intent ->
+                    when (intent.getStringExtra("screen")) {
+                        "blocking" -> navigator.showBlockedConversations()
+                    }
+                }
+
         // Show changelog
         if (changelogManager.didUpdate() && Locale.getDefault().language.startsWith("en")) {
             view.showChangelog()
