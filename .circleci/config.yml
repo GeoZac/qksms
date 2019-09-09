@@ -26,10 +26,18 @@ jobs:
       
       - restore_cache:
           <<: *cache_key
-
+      
       - run:
-          name: Assemble
+          name: Clean
+          command: ./gradlew clean
+          
+      - run:
+          name: Assemble NoAnalytics
           command: ./gradlew assemblenoAnalyticsDebug
+          
+      - run:
+          name: Assemble WithAnalytics
+          command: ./gradlew assemblewithAnalyticsDebug
 
       - store_artifacts:
           path: presentation/build/outputs/apk
