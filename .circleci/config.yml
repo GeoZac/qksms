@@ -32,6 +32,10 @@ jobs:
           command: ./gradlew clean
           
       - run:
+          name: Dependencies
+          command: ./gradlew presentation:dependencies
+          
+      - run:
           name: Assemble NoAnalytics
           command: ./gradlew assemblenoAnalyticsDebug
           
