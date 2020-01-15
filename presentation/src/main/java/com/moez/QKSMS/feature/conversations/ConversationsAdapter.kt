@@ -101,7 +101,7 @@ class ConversationsAdapter @Inject constructor(
         val origActivated = holder.containerView.isActivated
         holder.containerView.isActivated = isSelected(conversation.id)
         // add selection image
-        if (origActivated != holder.containerView.isActivated) flipAvatarPic(view)
+        if (origActivated != holder.containerView.isActivated) flipAvatarPic(holder.containerView)
 
         holder.avatars.recipients = conversation.recipients
         holder.title.collapseEnabled = conversation.recipients.size > 1
