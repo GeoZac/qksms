@@ -57,7 +57,7 @@
 
     <item
         android:id="@+id/unpin"
-        android:icon="@drawable/ic_pin_black_24dp"
+        android:icon="@drawable/ic_unpin_black_24dp"
         android:title="@string/main_menu_unpin"
         android:visible="false"
         app:showAsAction="ifRoom" />
