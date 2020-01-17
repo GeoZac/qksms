@@ -305,7 +305,8 @@ class MessagesAdapter @Inject constructor(
             else -> dateFormatter.getTimestamp(message.date)
         }
 
-        holder.status.setVisible(when {
+        holder.status.setVisible(true
+            /*when {
             expanded[message.id] == true -> true
             message.isSending() -> true
             message.isFailedMessage() -> true
@@ -313,7 +314,7 @@ class MessagesAdapter @Inject constructor(
             conversation?.recipients?.size ?: 0 > 1 && !message.isMe() && next?.compareSender(message) != true -> true
             message.isDelivered() && next?.isDelivered() != true && age <= BubbleUtils.TIMESTAMP_THRESHOLD -> true
             else -> false
-        })
+        }*/)
     }
 
     override fun getItemViewType(position: Int): Int {
