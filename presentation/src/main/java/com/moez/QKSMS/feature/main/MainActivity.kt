@@ -38,6 +38,7 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.ItemTouchHelper
+import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
 import com.jakewharton.rxbinding2.view.clicks
 import com.jakewharton.rxbinding2.widget.textChanges
@@ -258,6 +259,16 @@ class MainActivity : QkThemedActivity(), MainView {
                 conversationsAdapter.updateData(state.page.data)
                 itemTouchHelper.attachToRecyclerView(recyclerView)
                 empty.setText(R.string.inbox_empty_text)
+
+                recyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener() {
+                    override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                        if (dy > 0 && compose.visibility == View.VISIBLE) {
+                            compose.hide()
+                        } else if (dy < 0 && compose.visibility != View.VISIBLE) {
+                            compose.show()
+                        }
+                    }
+                })
             }
 
             is Searching -> {
