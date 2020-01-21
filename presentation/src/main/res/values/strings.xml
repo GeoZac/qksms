@@ -84,8 +84,8 @@
 
     <string name="rate_title">Enjoying QKSMS?</string>
     <string name="rate_summary">Share some love and rate us on Google Play!</string>
-    <string name="rate_okay">OKAY!</string>
-    <string name="rate_dismiss">DISMISS</string>
+    <string name="rate_okay">Okay!</string>
+    <string name="rate_dismiss">Dismiss</string>
 
     <string name="dialog_delete_title">Delete</string>
     <plurals name="dialog_delete_message">
@@ -238,7 +238,7 @@
     <string name="settings_swipe_actions_summary">Configure swipe actions for conversations</string>
     <string name="settings_swipe_actions_right">Right swipe</string>
     <string name="settings_swipe_actions_left">Left swipe</string>
-    <string name="settings_swipe_actions_change">CHANGE</string>
+    <string name="settings_swipe_actions_change">Change</string>
     <string-array name="settings_swipe_actions">
         <item>None</item>
         <item>Archive</item>
@@ -359,7 +359,7 @@
 
     <string name="theme_material">Material</string>
     <string name="theme_plus" translatable="false">QKSMS+</string>
-    <string name="theme_hex">HEX</string>
+    <string name="theme_hex">Hex</string>
     <string name="theme_apply">Apply</string>
 
     <string name="about_developer" translatable="false">Moez Bhatti</string>
