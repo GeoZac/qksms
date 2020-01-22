@@ -61,7 +61,7 @@ class ConversationsAdapter @Inject constructor(
 
             view.snippet.setTypeface(view.snippet.typeface, Typeface.BOLD)
             view.snippet.setTextColor(textColorPrimary)
-            view.snippet.maxLines = 5
+            view.snippet.maxLines = 2 // Just in case,else breaks the view
 
             view.unread.isVisible = true
 
