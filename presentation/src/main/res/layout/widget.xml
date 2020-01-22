@@ -80,10 +80,10 @@
         tools:listitem="@layout/widget_list_item" />
 
     <!-- This needs to be a FrameLayout, since Views are not supported-->
-    <FrameLayout
+    <!--<FrameLayout
         android:layout_width="match_parent"
         android:layout_height="8dp"
         android:layout_below="@id/toolbar"
         android:background="@drawable/ab_shadow" />
-
+-->
 </RelativeLayout>

@@ -75,7 +75,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="gone"
-        app:constraint_referenced_ids="sendAsGroupBackground,sendAsGroupTitle,sendAsGroupSummary,sendAsGroupSwitch,sendAsGroupShadow"
+        app:constraint_referenced_ids="sendAsGroupBackground,sendAsGroupTitle,sendAsGroupSummary,sendAsGroupSwitch"
         tools:visibility="visible" />
 
     <View
@@ -124,12 +124,12 @@
         app:layout_constraintEnd_toEndOf="@id/sendAsGroupBackground"
         app:layout_constraintTop_toTopOf="@id/sendAsGroupBackground" />
 
-    <View
+    <!--<View
         android:id="@+id/sendAsGroupShadow"
         android:layout_width="match_parent"
         android:layout_height="8dp"
         android:background="@drawable/ab_shadow"
-        app:layout_constraintTop_toBottomOf="@id/sendAsGroupBackground" />
+        app:layout_constraintTop_toBottomOf="@id/sendAsGroupBackground" />-->
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/composeBar"
@@ -350,11 +350,11 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-    <View
+    <!--<View
         android:layout_width="match_parent"
         android:layout_height="8dp"
         android:background="@drawable/ab_shadow"
-        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />-->
 
     <View
         android:layout_width="match_parent"
