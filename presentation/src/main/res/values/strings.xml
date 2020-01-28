@@ -210,15 +210,20 @@
     <string name="settings_category_qkreply">QK Reply</string>
 
     <string name="settings_theme_title">Theme</string>
+    <string name="settings_theme_summary">Select app accent color</string>
     <string name="settings_night_title">Night mode</string>
     <string name="settings_black_title">Pure black night mode</string>
+    <string name="settings_black_summary">Optimized for OLED screens</string>
     <string name="settings_night_start_title">Start time</string>
     <string name="settings_night_end_title">End time</string>
     <string name="settings_automatic_colors_title">Automatic contact colors</string>
+    <string name="settings_automatic_colors_summary">Set automatic color all each contact</string>
     <string name="settings_text_size_title">Font size</string>
     <string name="settings_system_font_title">Use system font</string>
+    <string name="settings_system_font_summary">Override in-app fonts</string>
     <string name="settings_auto_emoji_title">Automatic emoji</string>
     <string name="settings_notifications_title">Notifications</string>
+    <string name="settings_notifications_summary">Configure Notifications and actions</string>
     <string name="settings_notifications_o_summary">Tap to customize</string>
     <string name="settings_notification_actions_title">Actions</string>
     <string name="settings_notification_action_1">Button 1</string>
